@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Sudoku.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>SudokuiOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>7787D1CB16FD1A59006BC582</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7787D1EF16FD1A59006BC582</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7790DC7716FCCAFA0099151B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7790DC9E16FCCAFB0099151B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>77F4335C16F28A0D0092402F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>77F4337C16F28A0D0092402F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -7,9 +7,16 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "SudokuWindowController.h"
 
 @interface RKAppDelegate : NSObject <NSApplicationDelegate>
+{
+    @private
+    SudokuWindowController* _playerWindowController;
+}
 
 @property (assign) IBOutlet NSWindow *window;
+
+-(void)redrawWindows;
 
 @end
