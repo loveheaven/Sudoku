@@ -122,7 +122,9 @@
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     if (gameOver)
+    {
         return;
+    }
     UITouch *touch = [touches anyObject];
     CGPoint location = [touch locationInView:self];
     CGFloat thirds = self.bounds.size.width / 3;
@@ -140,6 +142,9 @@
     
     [_viewController setCurrentValue:value atCellX:_selectionCellX andCellY:_selectionCellY xIndex:_selectionX yIndex:_selectionY];
     
+    if ([_viewController isPuzzleSolved])
+        gameOver = YES;
+        
     [self setNeedsDisplay];
     [_viewController redrawWindow];
 }

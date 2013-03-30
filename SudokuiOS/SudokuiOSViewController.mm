@@ -102,9 +102,12 @@
 
 -(IBAction)giveUpClicked:(UIButton *)sender
 {
-    [_model giveUp];
-    [_myView giveUp];
-    [_myView setNeedsDisplay];
+    if (![self isPuzzleSolved])
+    {
+        [_model giveUp];
+        [_myView giveUp];
+        [_myView setNeedsDisplay];
+    }
 }
 
 /*
