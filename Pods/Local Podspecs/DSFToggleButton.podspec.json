@@ -1,0 +1,33 @@
+{
+  "name": "DSFToggleButton",
+  "version": "3.0.1",
+  "summary": "A layer-based NSButton that mimics the toggle button style of iOS",
+  "homepage": "https://github.com/dagronf/DSFToggleButton",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Darren Ford": "dford_au-reg@yahoo.com"
+  },
+  "screenshots": "https://github.com/dagronf/dagronf.github.io/raw/master/art/projects/DSFToggleButton/primary.png",
+  "social_media_url": "https://twitter.com/dagronf",
+  "platforms": {
+    "osx": "10.9"
+  },
+  "source": {
+    "git": "https://github.com/dagronf/DSFToggleButton.git",
+    "tag": "3.0.1"
+  },
+  "osx": {
+    "frameworks": "AppKit"
+  },
+  "swift_versions": "5.0",
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "Sources/DSFToggleButton/**/*.swift"
+    }
+  ],
+  "swift_version": "5.0"
+}

@@ -7,7 +7,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
-@class SudokuWindowController;
+#import "SudokuModel.h"
+#import "NineGridButton.h"
+#import "Util.h"
+#import "Sudoku-Swift.h"//Product Module Name in Build-Settings
 
 @interface SudokuView : NSView
 {
@@ -17,9 +20,25 @@
     UInt32 _selectionX;
     UInt32 _selectionY;
     BOOL _haveSelection;
+    NSRect _playAreaRect;
+    
+   
+    BOOL _isInNoteMode;
+    BOOL _isInHintMode;
+    
+    SudokuModel* _model;
+    
 }
 
 
-@property (assign, nonatomic) IBOutlet SudokuWindowController* _windowController;
+- (IBAction)hintButtonClick:(FlatButton *)sender;
+- (IBAction)eraseButtonClick:(FlatButton *)sender;
+
+- (IBAction)noteButtonClick:(NSButton *)sender;
+- (IBAction)undoButtonClick:(FlatButton *)sender;
+
+- (IBAction)setClickNumber:(NineGridButton *)sender;
+- (IBAction)menuSelected:(NSMenuItem*)sender;
+@property (assign, nonatomic) SudokuModel* _model;
 
 @end

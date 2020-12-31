@@ -1,0 +1,23 @@
+PODS:
+  - DSFToggleButton (3.0.1):
+    - DSFToggleButton/Core (= 3.0.1)
+  - DSFToggleButton/Core (3.0.1)
+
+DEPENDENCIES:
+  - DSFToggleButton (from `https://github.com/dagronf/DSFToggleButton`)
+
+EXTERNAL SOURCES:
+  DSFToggleButton:
+    :git: https://github.com/dagronf/DSFToggleButton
+
+CHECKOUT OPTIONS:
+  DSFToggleButton:
+    :commit: a14048067c98fa52f5a1d1509afdf02a89c088b7
+    :git: https://github.com/dagronf/DSFToggleButton
+
+SPEC CHECKSUMS:
+  DSFToggleButton: 1a0b7c1ffc7421741539d4fdff5af19b2cf91279
+
+PODFILE CHECKSUM: d0be7c2a3edb0b4167fb4e8e082c677c559f07cc
+
+COCOAPODS: 1.10.0

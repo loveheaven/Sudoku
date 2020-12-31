@@ -1,0 +1,6 @@
+framework module DSFToggleButton {
+  umbrella header "DSFToggleButton-umbrella.h"
+
+  export *
+  module * { export * }
+}

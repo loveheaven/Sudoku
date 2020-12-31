@@ -1,0 +1,1087 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		018F249E3A21F75CB10639F9FE485547 /* DSFToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F61F8D953316306A0130B3C60DFF3C /* DSFToggleButton.swift */; };
+		0443465D4A29C3016CC729DAEA1BF86E /* Pods-SudokuiOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C3EFCAD62B972129808D4256F90069D4 /* Pods-SudokuiOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04AC57794DA090853B8E7BFE21F42A26 /* Pods-SudokuiOSTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AEF3D19A6243D11F4EC3B87F87E3887 /* Pods-SudokuiOSTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		083982F01008B29C18EAF6C5FC77329D /* DSFAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B40F77178C80FD8298918CF18249614 /* DSFAccessibility.swift */; };
+		1A34E8A21F08FDDBC16E93C23AA7741F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80F217A0753179994CA6BA32D39FC4BD /* Cocoa.framework */; };
+		3E6A795A5A0E604167CF2FC5CA2F0445 /* Pods-SudokuTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 34FD45142ACCBD2C3E010F25E01EB211 /* Pods-SudokuTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CAEB8CB829B27747387BA3245E4A4AD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80F217A0753179994CA6BA32D39FC4BD /* Cocoa.framework */; };
+		6BB493ED27768487B1BC1BB92448EA02 /* Pods-SudokuiOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9133A10772CDD2370924C7919A77F495 /* Pods-SudokuiOS-dummy.m */; };
+		91F68F379B957165F91850F99770697D /* Pods-Sudoku-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E1B7CB1E48A4498187ED768F70621DB /* Pods-Sudoku-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C35741C0A95FC68131739088DF13583 /* DSFToggleButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9004DA1D38ADD025149227F05566B3EB /* DSFToggleButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8AF39FE9394EFF72577B49EE424C077 /* DSFToggleButton+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724960FC89D42BA8DFDFB1E48CC07148 /* DSFToggleButton+extensions.swift */; };
+		B048EF67B3C4D364B4089C5CA47F2519 /* Pods-SudokuTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB70D92B2FF0CC785D50C4A99AE9F589 /* Pods-SudokuTests-dummy.m */; };
+		B42BCD7517C53A7BDC53D7FDB2CAF889 /* DSFToggleButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3955F7E121FC8DEEC5D470A2D0DD6813 /* DSFToggleButton-dummy.m */; };
+		B6F298B878B71EA1BA933114A7DB5C3F /* Pods-Sudoku-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59812E59900CF2F88E7DC4C2C22CBF29 /* Pods-Sudoku-dummy.m */; };
+		C1F1B54267FB5BD67B7E36ED8604A967 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80F217A0753179994CA6BA32D39FC4BD /* Cocoa.framework */; };
+		D5EDB1CBBE1FE085301CE3E46658850D /* Pods-SudokuiOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A9184B5114F180127A8CC9972AD1F7 /* Pods-SudokuiOSTests-dummy.m */; };
+		DB552A647F29AEAF2120E230BA163A46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B9A94864B7F08BFAD645D6E63A703DD /* Foundation.framework */; };
+		E04CC46772905C98DAB99B5387D3C96B /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D44BECF2EFFC21CAE211318C12465E8 /* AppKit.framework */; };
+		EFB72BB05355B5D9F5D3738546C2B0F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B9A94864B7F08BFAD645D6E63A703DD /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		56FB944BF54FFAFC7D5A1167E13FB2D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10241D835697CC8E071A0062CB310C17;
+			remoteInfo = DSFToggleButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0586431B6F2CD094D67BF71896D1075A /* Pods-SudokuiOSTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SudokuiOSTests-Info.plist"; sourceTree = "<group>"; };
+		14A39237BDB33372474FADB4AF22AB43 /* DSFToggleButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DSFToggleButton-prefix.pch"; sourceTree = "<group>"; };
+		1874D1AD4EE5F36DCE429D5A6C4DAAA1 /* Pods-Sudoku-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sudoku-frameworks.sh"; sourceTree = "<group>"; };
+		1E6F45ECBB9848E3C1F47B6AA5F6EB29 /* Pods-Sudoku.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Sudoku.modulemap"; sourceTree = "<group>"; };
+		1FD0226EE0CD4AC58738A429AC7E0FAA /* Pods-Sudoku.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sudoku.release.xcconfig"; sourceTree = "<group>"; };
+		22ACF0EC33C6EB2BBFFAD594CFCB0CD3 /* DSFToggleButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DSFToggleButton.debug.xcconfig; sourceTree = "<group>"; };
+		239CB9C7D52BB49535401A00D7C14676 /* Pods-SudokuiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SudokuiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		2F49432086346B84543F9A8ACB92DE5D /* DSFToggleButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DSFToggleButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32C7437C9D3C1E5C36F403C02AB0FBC9 /* Pods-SudokuTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SudokuTests.modulemap"; sourceTree = "<group>"; };
+		34FD45142ACCBD2C3E010F25E01EB211 /* Pods-SudokuTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SudokuTests-umbrella.h"; sourceTree = "<group>"; };
+		37615E7A8735280B212B56FC7F866BF6 /* Pods-SudokuiOSTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SudokuiOSTests.modulemap"; sourceTree = "<group>"; };
+		3955F7E121FC8DEEC5D470A2D0DD6813 /* DSFToggleButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DSFToggleButton-dummy.m"; sourceTree = "<group>"; };
+		3B40F77178C80FD8298918CF18249614 /* DSFAccessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DSFAccessibility.swift; path = Sources/DSFToggleButton/DSFAccessibility.swift; sourceTree = "<group>"; };
+		3B9A94864B7F08BFAD645D6E63A703DD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3D44BECF2EFFC21CAE211318C12465E8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
+		3DD9C23A30FBDFFAB5B6CB4B7002FD73 /* Pods-SudokuiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SudokuiOS.release.xcconfig"; sourceTree = "<group>"; };
+		3F6A24145423B67931954FA840F469DF /* Pods-SudokuiOSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SudokuiOSTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4A560C754AFD13A43861C32C6C25CC9E /* Pods-Sudoku-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sudoku-acknowledgements.plist"; sourceTree = "<group>"; };
+		517021002152000B3DF6F31929874C2B /* Pods-SudokuTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SudokuTests-Info.plist"; sourceTree = "<group>"; };
+		56C483004598A69821902ED35E8DBBC9 /* Pods_SudokuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SudokuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5772BB1CF0425D9159CFDD14FD0039A5 /* Pods_SudokuiOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SudokuiOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59812E59900CF2F88E7DC4C2C22CBF29 /* Pods-Sudoku-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Sudoku-dummy.m"; sourceTree = "<group>"; };
+		5E1B7CB1E48A4498187ED768F70621DB /* Pods-Sudoku-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Sudoku-umbrella.h"; sourceTree = "<group>"; };
+		63F5CD630436AE0CDC216B5D16CC0D4B /* Pods-Sudoku.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sudoku.debug.xcconfig"; sourceTree = "<group>"; };
+		647F6C35BC91702B2B4B7576084FD2A9 /* Pods-Sudoku-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sudoku-Info.plist"; sourceTree = "<group>"; };
+		69BC57D2FF2DA2FA991EAB2047107FB0 /* Pods_Sudoku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sudoku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		724960FC89D42BA8DFDFB1E48CC07148 /* DSFToggleButton+extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DSFToggleButton+extensions.swift"; path = "Sources/DSFToggleButton/DSFToggleButton+extensions.swift"; sourceTree = "<group>"; };
+		74B8752216E8A3A5D5A2B8888D6347B5 /* Pods_SudokuiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SudokuiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80F217A0753179994CA6BA32D39FC4BD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		86F61F8D953316306A0130B3C60DFF3C /* DSFToggleButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DSFToggleButton.swift; path = Sources/DSFToggleButton/DSFToggleButton.swift; sourceTree = "<group>"; };
+		8A6B58EA4F9A7400F6F953F1EC7F625E /* Pods-SudokuiOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SudokuiOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8C10E77B4E44CFA87AB72983909F02A1 /* DSFToggleButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DSFToggleButton-Info.plist"; sourceTree = "<group>"; };
+		9004DA1D38ADD025149227F05566B3EB /* DSFToggleButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DSFToggleButton-umbrella.h"; sourceTree = "<group>"; };
+		9133A10772CDD2370924C7919A77F495 /* Pods-SudokuiOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SudokuiOS-dummy.m"; sourceTree = "<group>"; };
+		92A9184B5114F180127A8CC9972AD1F7 /* Pods-SudokuiOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SudokuiOSTests-dummy.m"; sourceTree = "<group>"; };
+		96AD1C11F91C07EF16EA3A706F9FDB2C /* Pods-SudokuiOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SudokuiOS.modulemap"; sourceTree = "<group>"; };
+		9AEF3D19A6243D11F4EC3B87F87E3887 /* Pods-SudokuiOSTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SudokuiOSTests-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AB40936898FA19A08412A9C913AA68A7 /* Pods-SudokuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SudokuTests.release.xcconfig"; sourceTree = "<group>"; };
+		BBA9B8AB53C6E0BDC5583256D952FAE7 /* Pods-SudokuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SudokuTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BC89446CDBF80A33E0AE7F53F8B5FBE7 /* Pods-SudokuTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SudokuTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C3EFCAD62B972129808D4256F90069D4 /* Pods-SudokuiOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SudokuiOS-umbrella.h"; sourceTree = "<group>"; };
+		CB70D92B2FF0CC785D50C4A99AE9F589 /* Pods-SudokuTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SudokuTests-dummy.m"; sourceTree = "<group>"; };
+		CB791F12B03DEC3E9820DA35BD806DCD /* DSFToggleButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DSFToggleButton.release.xcconfig; sourceTree = "<group>"; };
+		CE15B20DBACEAEFCCD5867FE81D6C5A6 /* Pods-SudokuiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SudokuiOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		D261D493BA3ECCF3E49345AF85980A34 /* Pods-SudokuiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SudokuiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EE36DDB7F88F4DEB4BF0CB5E1C897377 /* Pods-SudokuiOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SudokuiOS-Info.plist"; sourceTree = "<group>"; };
+		F92C8E7564238219D1DE9C7E8D94E086 /* Pods-SudokuTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SudokuTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F98FF149DFB6912ACEF42739D04B8F41 /* Pods-Sudoku-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Sudoku-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FB202D21947D906A8983C1287E9DDCDD /* Pods-SudokuiOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SudokuiOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		FBDC86DF2F6C1CFF19C6DA78EFB9B057 /* DSFToggleButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DSFToggleButton.modulemap; sourceTree = "<group>"; };
+		FC5824C639A2D4FB6A63D6B589EE0380 /* Pods-SudokuiOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SudokuiOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BC65683D2AA85E089C0FC38245EC2BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB72BB05355B5D9F5D3738546C2B0F1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D6EA0349E7CA32ECA767B6B32F8CF99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E04CC46772905C98DAB99B5387D3C96B /* AppKit.framework in Frameworks */,
+				1A34E8A21F08FDDBC16E93C23AA7741F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AD2A0B92D22014CC76EBB291C883DA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB552A647F29AEAF2120E230BA163A46 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D6A12F2E8827CAEC28D09798A209B6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CAEB8CB829B27747387BA3245E4A4AD /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB49AF562F140131618189B4C893B0C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1F1B54267FB5BD67B7E36ED8604A967 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34249EE86355FF05E4EAC714FDDC6196 /* Pods-Sudoku */ = {
+			isa = PBXGroup;
+			children = (
+				1E6F45ECBB9848E3C1F47B6AA5F6EB29 /* Pods-Sudoku.modulemap */,
+				F98FF149DFB6912ACEF42739D04B8F41 /* Pods-Sudoku-acknowledgements.markdown */,
+				4A560C754AFD13A43861C32C6C25CC9E /* Pods-Sudoku-acknowledgements.plist */,
+				59812E59900CF2F88E7DC4C2C22CBF29 /* Pods-Sudoku-dummy.m */,
+				1874D1AD4EE5F36DCE429D5A6C4DAAA1 /* Pods-Sudoku-frameworks.sh */,
+				647F6C35BC91702B2B4B7576084FD2A9 /* Pods-Sudoku-Info.plist */,
+				5E1B7CB1E48A4498187ED768F70621DB /* Pods-Sudoku-umbrella.h */,
+				63F5CD630436AE0CDC216B5D16CC0D4B /* Pods-Sudoku.debug.xcconfig */,
+				1FD0226EE0CD4AC58738A429AC7E0FAA /* Pods-Sudoku.release.xcconfig */,
+			);
+			name = "Pods-Sudoku";
+			path = "Target Support Files/Pods-Sudoku";
+			sourceTree = "<group>";
+		};
+		37C1BFFFC70B5F66626F931E016A5B53 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				34249EE86355FF05E4EAC714FDDC6196 /* Pods-Sudoku */,
+				FFAF6D94FB1E2EAD116A6B7B3F79C783 /* Pods-SudokuiOS */,
+				D186268534662CE3F94EC66B4558DBD4 /* Pods-SudokuiOSTests */,
+				F39FF762DAD42292E93BE055677D8FB0 /* Pods-SudokuTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		40A4CB13732A0F06F4B920EB538B4A8C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3B40F77178C80FD8298918CF18249614 /* DSFAccessibility.swift */,
+				86F61F8D953316306A0130B3C60DFF3C /* DSFToggleButton.swift */,
+				724960FC89D42BA8DFDFB1E48CC07148 /* DSFToggleButton+extensions.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		4F569709A5E16E0EB6EB7D5F44A87FC5 /* DSFToggleButton */ = {
+			isa = PBXGroup;
+			children = (
+				40A4CB13732A0F06F4B920EB538B4A8C /* Core */,
+				C5A9F87318B62B1B8DDD2F2E3BAD6ECF /* Support Files */,
+			);
+			path = DSFToggleButton;
+			sourceTree = "<group>";
+		};
+		5B69B95B6478EECD189F1F0BDF2A6CCC /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3B9A94864B7F08BFAD645D6E63A703DD /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9498C621471A451FD85AF1AF85B40DB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F49432086346B84543F9A8ACB92DE5D /* DSFToggleButton.framework */,
+				69BC57D2FF2DA2FA991EAB2047107FB0 /* Pods_Sudoku.framework */,
+				74B8752216E8A3A5D5A2B8888D6347B5 /* Pods_SudokuiOS.framework */,
+				5772BB1CF0425D9159CFDD14FD0039A5 /* Pods_SudokuiOSTests.framework */,
+				56C483004598A69821902ED35E8DBBC9 /* Pods_SudokuTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A09D80D65993CACAAFCD6515123C694F /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				3D44BECF2EFFC21CAE211318C12465E8 /* AppKit.framework */,
+				80F217A0753179994CA6BA32D39FC4BD /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		BF21CADE24BC91ABB44621A056D3CE67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F569709A5E16E0EB6EB7D5F44A87FC5 /* DSFToggleButton */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C5A9F87318B62B1B8DDD2F2E3BAD6ECF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBDC86DF2F6C1CFF19C6DA78EFB9B057 /* DSFToggleButton.modulemap */,
+				3955F7E121FC8DEEC5D470A2D0DD6813 /* DSFToggleButton-dummy.m */,
+				8C10E77B4E44CFA87AB72983909F02A1 /* DSFToggleButton-Info.plist */,
+				14A39237BDB33372474FADB4AF22AB43 /* DSFToggleButton-prefix.pch */,
+				9004DA1D38ADD025149227F05566B3EB /* DSFToggleButton-umbrella.h */,
+				22ACF0EC33C6EB2BBFFAD594CFCB0CD3 /* DSFToggleButton.debug.xcconfig */,
+				CB791F12B03DEC3E9820DA35BD806DCD /* DSFToggleButton.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DSFToggleButton";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				F37AB47F83AA389EF0749C09209BE16E /* Frameworks */,
+				BF21CADE24BC91ABB44621A056D3CE67 /* Pods */,
+				9498C621471A451FD85AF1AF85B40DB8 /* Products */,
+				37C1BFFFC70B5F66626F931E016A5B53 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D186268534662CE3F94EC66B4558DBD4 /* Pods-SudokuiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				37615E7A8735280B212B56FC7F866BF6 /* Pods-SudokuiOSTests.modulemap */,
+				FC5824C639A2D4FB6A63D6B589EE0380 /* Pods-SudokuiOSTests-acknowledgements.markdown */,
+				3F6A24145423B67931954FA840F469DF /* Pods-SudokuiOSTests-acknowledgements.plist */,
+				92A9184B5114F180127A8CC9972AD1F7 /* Pods-SudokuiOSTests-dummy.m */,
+				0586431B6F2CD094D67BF71896D1075A /* Pods-SudokuiOSTests-Info.plist */,
+				9AEF3D19A6243D11F4EC3B87F87E3887 /* Pods-SudokuiOSTests-umbrella.h */,
+				D261D493BA3ECCF3E49345AF85980A34 /* Pods-SudokuiOSTests.debug.xcconfig */,
+				CE15B20DBACEAEFCCD5867FE81D6C5A6 /* Pods-SudokuiOSTests.release.xcconfig */,
+			);
+			name = "Pods-SudokuiOSTests";
+			path = "Target Support Files/Pods-SudokuiOSTests";
+			sourceTree = "<group>";
+		};
+		F37AB47F83AA389EF0749C09209BE16E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B69B95B6478EECD189F1F0BDF2A6CCC /* iOS */,
+				A09D80D65993CACAAFCD6515123C694F /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F39FF762DAD42292E93BE055677D8FB0 /* Pods-SudokuTests */ = {
+			isa = PBXGroup;
+			children = (
+				32C7437C9D3C1E5C36F403C02AB0FBC9 /* Pods-SudokuTests.modulemap */,
+				BC89446CDBF80A33E0AE7F53F8B5FBE7 /* Pods-SudokuTests-acknowledgements.markdown */,
+				F92C8E7564238219D1DE9C7E8D94E086 /* Pods-SudokuTests-acknowledgements.plist */,
+				CB70D92B2FF0CC785D50C4A99AE9F589 /* Pods-SudokuTests-dummy.m */,
+				517021002152000B3DF6F31929874C2B /* Pods-SudokuTests-Info.plist */,
+				34FD45142ACCBD2C3E010F25E01EB211 /* Pods-SudokuTests-umbrella.h */,
+				BBA9B8AB53C6E0BDC5583256D952FAE7 /* Pods-SudokuTests.debug.xcconfig */,
+				AB40936898FA19A08412A9C913AA68A7 /* Pods-SudokuTests.release.xcconfig */,
+			);
+			name = "Pods-SudokuTests";
+			path = "Target Support Files/Pods-SudokuTests";
+			sourceTree = "<group>";
+		};
+		FFAF6D94FB1E2EAD116A6B7B3F79C783 /* Pods-SudokuiOS */ = {
+			isa = PBXGroup;
+			children = (
+				96AD1C11F91C07EF16EA3A706F9FDB2C /* Pods-SudokuiOS.modulemap */,
+				8A6B58EA4F9A7400F6F953F1EC7F625E /* Pods-SudokuiOS-acknowledgements.markdown */,
+				FB202D21947D906A8983C1287E9DDCDD /* Pods-SudokuiOS-acknowledgements.plist */,
+				9133A10772CDD2370924C7919A77F495 /* Pods-SudokuiOS-dummy.m */,
+				EE36DDB7F88F4DEB4BF0CB5E1C897377 /* Pods-SudokuiOS-Info.plist */,
+				C3EFCAD62B972129808D4256F90069D4 /* Pods-SudokuiOS-umbrella.h */,
+				239CB9C7D52BB49535401A00D7C14676 /* Pods-SudokuiOS.debug.xcconfig */,
+				3DD9C23A30FBDFFAB5B6CB4B7002FD73 /* Pods-SudokuiOS.release.xcconfig */,
+			);
+			name = "Pods-SudokuiOS";
+			path = "Target Support Files/Pods-SudokuiOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		20BDB142EDA29F3013E98B0BFF7C0D6D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E6A795A5A0E604167CF2FC5CA2F0445 /* Pods-SudokuTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BEC302ECEEABCA5CB10622C60E65B70 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04AC57794DA090853B8E7BFE21F42A26 /* Pods-SudokuiOSTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44FF5ACD4355E971291D26C2413F1370 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91F68F379B957165F91850F99770697D /* Pods-Sudoku-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CB8C1EF5050990FA2464F23D1BC64EB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C35741C0A95FC68131739088DF13583 /* DSFToggleButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8B825B23024DA49B264AD1C7855B5D1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0443465D4A29C3016CC729DAEA1BF86E /* Pods-SudokuiOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		10241D835697CC8E071A0062CB310C17 /* DSFToggleButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F59BD294A8DDEEC13E0CF8F8E42DFBB8 /* Build configuration list for PBXNativeTarget "DSFToggleButton" */;
+			buildPhases = (
+				5CB8C1EF5050990FA2464F23D1BC64EB /* Headers */,
+				B1767D3AFC9C72E3B24087DCAEAB20B4 /* Sources */,
+				3D6EA0349E7CA32ECA767B6B32F8CF99 /* Frameworks */,
+				BC398C4E2CF5486E987A5B202F6D168C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DSFToggleButton;
+			productName = DSFToggleButton;
+			productReference = 2F49432086346B84543F9A8ACB92DE5D /* DSFToggleButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		83BB536D4D1B23C2537FC9A9A24C4659 /* Pods-SudokuiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15016C64080F97006F10F988896A9720 /* Build configuration list for PBXNativeTarget "Pods-SudokuiOS" */;
+			buildPhases = (
+				D8B825B23024DA49B264AD1C7855B5D1 /* Headers */,
+				7E4FE25256174690ED091F25166753CA /* Sources */,
+				6AD2A0B92D22014CC76EBB291C883DA3 /* Frameworks */,
+				717943B6D3E1C250FEC8461F565F8EAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SudokuiOS";
+			productName = "Pods-SudokuiOS";
+			productReference = 74B8752216E8A3A5D5A2B8888D6347B5 /* Pods_SudokuiOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9DE8B064D39997F8B55F526BDB5868EA /* Pods-SudokuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA18954A687CF90F3329D223F16C966D /* Build configuration list for PBXNativeTarget "Pods-SudokuTests" */;
+			buildPhases = (
+				20BDB142EDA29F3013E98B0BFF7C0D6D /* Headers */,
+				939C0EE5123B925834E1C6E083CCF2CE /* Sources */,
+				DB49AF562F140131618189B4C893B0C8 /* Frameworks */,
+				0BADB94C83622724CB5230D61C5B24A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SudokuTests";
+			productName = "Pods-SudokuTests";
+			productReference = 56C483004598A69821902ED35E8DBBC9 /* Pods_SudokuTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9F26F262B9397AED5C3252E3F908998E /* Pods-SudokuiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F726C2F359B97B19222B8CBD70AF1D4 /* Build configuration list for PBXNativeTarget "Pods-SudokuiOSTests" */;
+			buildPhases = (
+				2BEC302ECEEABCA5CB10622C60E65B70 /* Headers */,
+				49E3356C49C802B5A681D2B7DDC41BEE /* Sources */,
+				3BC65683D2AA85E089C0FC38245EC2BF /* Frameworks */,
+				BA27865915AA53A4EFB1FE417CF2701D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SudokuiOSTests";
+			productName = "Pods-SudokuiOSTests";
+			productReference = 5772BB1CF0425D9159CFDD14FD0039A5 /* Pods_SudokuiOSTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D24B23F5268F8258C29C232148C1E5D8 /* Pods-Sudoku */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D38A6052E441835C576B94AEFE7B6066 /* Build configuration list for PBXNativeTarget "Pods-Sudoku" */;
+			buildPhases = (
+				44FF5ACD4355E971291D26C2413F1370 /* Headers */,
+				4E925E7AC5D095009B3A75B1831010E0 /* Sources */,
+				8D6A12F2E8827CAEC28D09798A209B6E /* Frameworks */,
+				43FDD2A4DFAD3F7A17B1AF6DFA718030 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				736D0EB3DA77E60E887EFF8F6D0A4820 /* PBXTargetDependency */,
+			);
+			name = "Pods-Sudoku";
+			productName = "Pods-Sudoku";
+			productReference = 69BC57D2FF2DA2FA991EAB2047107FB0 /* Pods_Sudoku.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 9498C621471A451FD85AF1AF85B40DB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				10241D835697CC8E071A0062CB310C17 /* DSFToggleButton */,
+				D24B23F5268F8258C29C232148C1E5D8 /* Pods-Sudoku */,
+				83BB536D4D1B23C2537FC9A9A24C4659 /* Pods-SudokuiOS */,
+				9F26F262B9397AED5C3252E3F908998E /* Pods-SudokuiOSTests */,
+				9DE8B064D39997F8B55F526BDB5868EA /* Pods-SudokuTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0BADB94C83622724CB5230D61C5B24A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43FDD2A4DFAD3F7A17B1AF6DFA718030 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		717943B6D3E1C250FEC8461F565F8EAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA27865915AA53A4EFB1FE417CF2701D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC398C4E2CF5486E987A5B202F6D168C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49E3356C49C802B5A681D2B7DDC41BEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5EDB1CBBE1FE085301CE3E46658850D /* Pods-SudokuiOSTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E925E7AC5D095009B3A75B1831010E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6F298B878B71EA1BA933114A7DB5C3F /* Pods-Sudoku-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E4FE25256174690ED091F25166753CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BB493ED27768487B1BC1BB92448EA02 /* Pods-SudokuiOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		939C0EE5123B925834E1C6E083CCF2CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B048EF67B3C4D364B4089C5CA47F2519 /* Pods-SudokuTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1767D3AFC9C72E3B24087DCAEAB20B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				083982F01008B29C18EAF6C5FC77329D /* DSFAccessibility.swift in Sources */,
+				A8AF39FE9394EFF72577B49EE424C077 /* DSFToggleButton+extensions.swift in Sources */,
+				B42BCD7517C53A7BDC53D7FDB2CAF889 /* DSFToggleButton-dummy.m in Sources */,
+				018F249E3A21F75CB10639F9FE485547 /* DSFToggleButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		736D0EB3DA77E60E887EFF8F6D0A4820 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DSFToggleButton;
+			target = 10241D835697CC8E071A0062CB310C17 /* DSFToggleButton */;
+			targetProxy = 56FB944BF54FFAFC7D5A1167E13FB2D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10252940EADF93B82085A887775ACF4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		23604C1A966FF2B3C3238F4B47310E46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		25C601904A68AF521DD1CD098BC5CEA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE15B20DBACEAEFCCD5867FE81D6C5A6 /* Pods-SudokuiOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SudokuiOSTests/Pods-SudokuiOSTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SudokuiOSTests/Pods-SudokuiOSTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4EF0E732F501310D4CB2BF327CC4D6EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DD9C23A30FBDFFAB5B6CB4B7002FD73 /* Pods-SudokuiOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SudokuiOS/Pods-SudokuiOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SudokuiOS/Pods-SudokuiOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5B744DF2504752C9A1B9DD5165C04C91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63F5CD630436AE0CDC216B5D16CC0D4B /* Pods-Sudoku.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Sudoku/Pods-Sudoku-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Pods-Sudoku/Pods-Sudoku.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5F34C7440D3C194D03E897FBBE678EDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBA9B8AB53C6E0BDC5583256D952FAE7 /* Pods-SudokuTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SudokuTests/Pods-SudokuTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MODULEMAP_FILE = "Target Support Files/Pods-SudokuTests/Pods-SudokuTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		62C44BF86F2F9E52A25980D17A4C9084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D261D493BA3ECCF3E49345AF85980A34 /* Pods-SudokuiOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SudokuiOSTests/Pods-SudokuiOSTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SudokuiOSTests/Pods-SudokuiOSTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		66829F370C03CBCABDC66BECCFE0C70B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 239CB9C7D52BB49535401A00D7C14676 /* Pods-SudokuiOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SudokuiOS/Pods-SudokuiOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SudokuiOS/Pods-SudokuiOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		81CDD2E45A56258D83211B52ECD1BEE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB40936898FA19A08412A9C913AA68A7 /* Pods-SudokuTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SudokuTests/Pods-SudokuTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MODULEMAP_FILE = "Target Support Files/Pods-SudokuTests/Pods-SudokuTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		90CB0081697DA0E3C70BF0ECD9225A90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FD0226EE0CD4AC58738A429AC7E0FAA /* Pods-Sudoku.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Sudoku/Pods-Sudoku-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Pods-Sudoku/Pods-Sudoku.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A4AE349DC6B75B4650351B6E652F9C91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22ACF0EC33C6EB2BBFFAD594CFCB0CD3 /* DSFToggleButton.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DSFToggleButton/DSFToggleButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DSFToggleButton/DSFToggleButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/DSFToggleButton/DSFToggleButton.modulemap";
+				PRODUCT_MODULE_NAME = DSFToggleButton;
+				PRODUCT_NAME = DSFToggleButton;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C34A169689EDBBE36AB3B26D4001B2BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB791F12B03DEC3E9820DA35BD806DCD /* DSFToggleButton.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DSFToggleButton/DSFToggleButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DSFToggleButton/DSFToggleButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/DSFToggleButton/DSFToggleButton.modulemap";
+				PRODUCT_MODULE_NAME = DSFToggleButton;
+				PRODUCT_NAME = DSFToggleButton;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15016C64080F97006F10F988896A9720 /* Build configuration list for PBXNativeTarget "Pods-SudokuiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66829F370C03CBCABDC66BECCFE0C70B /* Debug */,
+				4EF0E732F501310D4CB2BF327CC4D6EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23604C1A966FF2B3C3238F4B47310E46 /* Debug */,
+				10252940EADF93B82085A887775ACF4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F726C2F359B97B19222B8CBD70AF1D4 /* Build configuration list for PBXNativeTarget "Pods-SudokuiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62C44BF86F2F9E52A25980D17A4C9084 /* Debug */,
+				25C601904A68AF521DD1CD098BC5CEA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D38A6052E441835C576B94AEFE7B6066 /* Build configuration list for PBXNativeTarget "Pods-Sudoku" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B744DF2504752C9A1B9DD5165C04C91 /* Debug */,
+				90CB0081697DA0E3C70BF0ECD9225A90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA18954A687CF90F3329D223F16C966D /* Build configuration list for PBXNativeTarget "Pods-SudokuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F34C7440D3C194D03E897FBBE678EDB /* Debug */,
+				81CDD2E45A56258D83211B52ECD1BEE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F59BD294A8DDEEC13E0CF8F8E42DFBB8 /* Build configuration list for PBXNativeTarget "DSFToggleButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4AE349DC6B75B4650351B6E652F9C91 /* Debug */,
+				C34A169689EDBBE36AB3B26D4001B2BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

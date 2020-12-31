@@ -7,16 +7,16 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "SudokuWindowController.h"
+#import "SudokuView.h"
+#import "NineGridButton.h"
 
 @interface RKAppDelegate : NSObject <NSApplicationDelegate>
-{
-    @private
-    SudokuWindowController* _playerWindowController;
-}
 
-@property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet NSWindow *_window;
 
--(void)redrawWindows;
+@property (assign) IBOutlet SudokuView *_view;
+
+@property (assign) IBOutlet NineGridButton *_nineGridButton;
+
 
 @end
