@@ -8,7 +8,15 @@
 
 #ifndef Util_h
 #define Util_h
+
 #import <Cocoa/Cocoa.h>
+
+@protocol SelectionChangeDelegate<NSObject>
+-(void) setAvailableNumbers:(NSMutableArray*)numbers;
+@end
+
+
+
 @interface Utility : NSObject
 +( NSRect )drawHashInBounds:( NSRect )bounds usingColor:( NSColor* )color lineWidth:(CGFloat)lineWidth;
 

@@ -39,6 +39,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+    self._view._selectionChangeDelegate = self._nineGridButton;
 }
 
 

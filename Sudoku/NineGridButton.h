@@ -26,7 +26,7 @@
 //-(void) setClickNumber:(int)number;
 //@end
 
-@interface NineGridButton : NSControl
+@interface NineGridButton : NSControl<SelectionChangeDelegate>
 {
 @private
     
@@ -36,15 +36,17 @@
     UInt32 _selectionNumberX;
     UInt32 _selectionNumberY;
     BOOL _mouseDown;
-    
+    BOOL isEnabled[9];
     
 }
 
+- (void)setAvailableNumbers:(NSMutableArray *)numbers;
 @property (nonatomic, assign) IBInspectable CGFloat borderWidth;                // Default:0.0  - Button's border width
 @property (nonatomic, strong) IBInspectable NSColor *backgroundHoverColor;         // Default:nil  - Button's backgroud color when mouse hovers.
 @property (nonatomic, strong) IBInspectable NSColor *backgroundActiveColor;         // Default:nil  - Button's backgroud color when mouse hovers.
 @property (nonatomic, strong) IBInspectable NSColor *fontColor;         // Default:nil  - Button's font color when state off
 @property (nonatomic, strong) IBInspectable NSColor *fontActiveColor;         // Default:nil  - Button's font color when state on
+@property (nonatomic, strong) IBInspectable NSColor *fontDisableColor;         // Default:nil  - Button's font color when state on
 @property (nonatomic, strong) IBInspectable NSFont *numberFont;         // Default:nil  - Button's font when state off
 //@property (nonatomic, copy) void(^buttonClick)(int number);
 //@property (nonatomic, strong) id <NineGridClickDelegate> clickDelegate;

@@ -24,7 +24,8 @@ const int _numberButtonMatrix[9] = {7,8,9,4,5,6,1,2,3};
     if(_selectionNumberY == -1 || _selectionNumberX == -1) return;
     CGFloat thirdWidth = _numberButtonAreaRect.size.width / 3.0;
     CGFloat thirdHeight = _numberButtonAreaRect.size.height / 3.0;
-    
+    int value = _numberButtonMatrix[_selectionNumberY*3+_selectionNumberX];
+    if (!isEnabled[value - 1]) return;
     if(_mouseDown) {
         [self.backgroundActiveColor setFill];
     } else {
@@ -47,7 +48,9 @@ const int _numberButtonMatrix[9] = {7,8,9,4,5,6,1,2,3};
     //NSFont *font = [NSFont fontWithName:@"American Typewriter" size:thirdHeight/2.0];
     self.numberFont = [NSFont fontWithName:@"Arial" size:fontSize];
     self.fontColor = [NSColor grayColor];
+    self.fontDisableColor = [NSColor lightGrayColor];
     self.fontActiveColor = [NSColor orangeColor];
+    memset(isEnabled, TRUE, 9);
     
 }
 - (instancetype)initWithCoder:(NSCoder *)coder {
@@ -59,6 +62,7 @@ const int _numberButtonMatrix[9] = {7,8,9,4,5,6,1,2,3};
     }
     return self;
 }
+
 
 - (instancetype)initWithFrame:(NSRect)frameRect {
     self = [super initWithFrame:frameRect];
@@ -116,7 +120,8 @@ const int _numberButtonMatrix[9] = {7,8,9,4,5,6,1,2,3};
         {
             int value = _numberButtonMatrix[y*3+x];
             
-            NSColor* color = ((value == self.clickedNumber) && _mouseDown)? self.fontActiveColor: self.fontColor;
+            NSColor* color = ((value == self.clickedNumber) && _mouseDown)? self.fontActiveColor:
+            (isEnabled[value-1]?self.fontColor:self.fontDisableColor);
             
             NSString* valueString = [NSString stringWithFormat:@"%c",(char)value+'0'];
             NSRect valueDrawRect = NSMakeRect(bounds.origin.x + x * thirdWidth,
@@ -176,19 +181,32 @@ const int _numberButtonMatrix[9] = {7,8,9,4,5,6,1,2,3};
         int x = (location.x - _numberButtonAreaRect.origin.x) *3 / _numberButtonAreaRect.size.width;
         int y = (location.y - _numberButtonAreaRect.origin.y) *3 / _numberButtonAreaRect.size.height;
         _clickedNumber = _numberButtonMatrix[y*3+x];
-        [NSApp sendAction: [self action] to: [self target] from: self];
-        //        if(_buttonClick != nil) {
-        //            _buttonClick(_numberButtonMatrix[y*3+x]);
-        //        }
-        //        if ([_clickDelegate respondsToSelector:@selector(setClickNumber)])
-        //        {
-        //            
-        //            [_clickDelegate setClickNumber:_numberButtonMatrix[y*3+x]];
-        //        }
-        _mouseDown = TRUE;
+        if (isEnabled[_clickedNumber-1]) {
+            [NSApp sendAction: [self action] to: [self target] from: self];
+            //        if(_buttonClick != nil) {
+            //            _buttonClick(_numberButtonMatrix[y*3+x]);
+            //        }
+            //        if ([_clickDelegate respondsToSelector:@selector(setClickNumber)])
+            //        {
+            //
+            //            [_clickDelegate setClickNumber:_numberButtonMatrix[y*3+x]];
+            //        }
+            _mouseDown = TRUE;
+        }
         
     }
     
     [self setNeedsDisplay: YES];
 }
+- (void)setAvailableNumbers:(NSMutableArray *)numbers {
+    memset(isEnabled, FALSE, 9);
+    
+    for(NSNumber* obj in  numbers) {
+    
+        isEnabled[obj.intValue -1] = TRUE;
+    }
+    [self setNeedsDisplay:TRUE];
+}
+
+
 @end

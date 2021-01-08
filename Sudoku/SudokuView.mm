@@ -10,9 +10,10 @@
 
 
 
+
 @interface SudokuView (hidden)
 
-
+@property (nonatomic, strong) id <SelectionChangeDelegate> selectionChangeDelegate;
 -(void)paintSelectionRectangle;
 -(void)drawPlayAreaRect;
 -(void)drawValueAtCellX:(int)cellX andCellY:(int)cellY inBounds:(NSRect)bounds;
@@ -276,6 +277,13 @@
              yIndex:_selectionY] == NO)
         {
             _haveSelection = YES;
+            if ([self._selectionChangeDelegate respondsToSelector:@selector(setAvailableNumbers:)])
+            {
+                NSMutableArray *nsarr = [[NSMutableArray alloc]init];
+                [self._model getAvailableValuesAtCell:_selectionCellX andCellY:_selectionCellY xIndex:_selectionX yIndex:_selectionY ret:nsarr];
+    
+                [self._selectionChangeDelegate setAvailableNumbers:nsarr];
+            }
         }
         else
         {
@@ -289,7 +297,7 @@
 
 - (void)keyDown:(NSEvent *)theEvent
 {
-    //NSLog(@"button clicked. %d, %d", theEvent.keyCode, ) ;
+    NSLog(@"button clicked. %d, %d", theEvent.keyCode,theEvent.modifierFlags) ;
     BOOL handled = NO;
     if (_haveSelection)
     {
@@ -297,19 +305,139 @@
         unichar keyChar = [theChars characterAtIndex:0];
         if (keyChar>='1' && keyChar <='9')
         {
-            [self._model setCurrentValue:keyChar-'0'
-                                            atCellX:_selectionCellX
-                                           andCellY:_selectionCellY
-                                             xIndex:_selectionX
-                                             yIndex:_selectionY];
+            [self setValue: keyChar-'0'];
             handled = YES;
         }
         else if(keyChar == '0' || theEvent.keyCode == 53) {
-            [self._model setCurrentValue: 0
-                                            atCellX:_selectionCellX
-                                           andCellY:_selectionCellY
-                                             xIndex:_selectionX
-                                             yIndex:_selectionY];
+            [self setValue: 0];
+            handled = YES;
+        } else if(theEvent.keyCode == 124) {
+            if(_selectionX == 2 && (_selectionCellX == 2 )) {
+                
+            } else {
+                int x = _selectionX + 1;
+                int cellx = _selectionCellX;
+                if(x == 3) {
+                    x = 0;
+                    cellx++;
+                }
+                while ([self._model isOriginalValueAtCellX:cellx andCellY:_selectionCellY xIndex:x yIndex:_selectionY]) {
+                    x++;
+                    if(x == 3) {
+                        x = 0;
+                        cellx++;
+                        if(cellx == 3) break;
+                    }
+                }
+                if(x <3 && cellx<3) {
+                    _selectionX = x;
+                    _selectionCellX = cellx;
+                    if ([self._selectionChangeDelegate respondsToSelector:@selector(setAvailableNumbers:)])
+                    {
+                        NSMutableArray *nsarr = [[NSMutableArray alloc]init];
+                        [self._model getAvailableValuesAtCell:_selectionCellX andCellY:_selectionCellY xIndex:_selectionX yIndex:_selectionY ret:nsarr];
+                        
+                        [self._selectionChangeDelegate setAvailableNumbers:nsarr];
+                    }
+                }
+                
+            }
+            handled = YES;
+        } else if(theEvent.keyCode == 123) {
+            if(_selectionX == 0 && (_selectionCellX == 0 )) {
+                
+            } else {
+                int x = _selectionX - 1;
+                int cellx = _selectionCellX;
+                if(x == -1) {
+                    x = 2;
+                    cellx--;
+                }
+                while ([self._model isOriginalValueAtCellX:cellx andCellY:_selectionCellY xIndex:x yIndex:_selectionY]) {
+                    x--;
+                    if(x == -1) {
+                        x = 2;
+                        cellx--;
+                        if(cellx < 0) break;
+                    }
+                }
+                if(x >=0 && cellx >=0) {
+                    _selectionX = x;
+                    _selectionCellX = cellx;
+                    if ([self._selectionChangeDelegate respondsToSelector:@selector(setAvailableNumbers:)])
+                    {
+                        NSMutableArray *nsarr = [[NSMutableArray alloc]init];
+                        [self._model getAvailableValuesAtCell:_selectionCellX andCellY:_selectionCellY xIndex:_selectionX yIndex:_selectionY ret:nsarr];
+                        
+                        [self._selectionChangeDelegate setAvailableNumbers:nsarr];
+                    }
+                }
+                
+            }
+            handled = YES;
+        } else if(theEvent.keyCode == 125) {
+            if(_selectionY == 0 && (_selectionCellY == 0 )) {
+                
+            } else {
+                int x = _selectionY - 1;
+                int cellx = _selectionCellY;
+                if(x == -1) {
+                    x = 2;
+                    cellx--;
+                }
+                while ([self._model isOriginalValueAtCellX:_selectionCellX andCellY:cellx xIndex:_selectionX yIndex:x]) {
+                    x--;
+                    if(x == -1) {
+                        x = 2;
+                        cellx--;
+                        if(cellx < 0) break;
+                    }
+                }
+                if(x >=0 && cellx >=0) {
+                    _selectionY = x;
+                    _selectionCellY = cellx;
+                    if ([self._selectionChangeDelegate respondsToSelector:@selector(setAvailableNumbers:)])
+                    {
+                        NSMutableArray *nsarr = [[NSMutableArray alloc]init];
+                        [self._model getAvailableValuesAtCell:_selectionCellX andCellY:_selectionCellY xIndex:_selectionX yIndex:_selectionY ret:nsarr];
+                        
+                        [self._selectionChangeDelegate setAvailableNumbers:nsarr];
+                    }
+                }
+                
+            }
+            handled = YES;
+        } else if(theEvent.keyCode == 126) {
+            if(_selectionY == 2 && (_selectionCellY == 2 )) {
+                
+            } else {
+                int x = _selectionY + 1;
+                int cellx = _selectionCellY;
+                if(x == 3) {
+                    x = 0;
+                    cellx++;
+                }
+                while ([self._model isOriginalValueAtCellX:_selectionCellX andCellY:cellx xIndex:_selectionX yIndex:x]) {
+                    x++;
+                    if(x == 3) {
+                        x = 0;
+                        cellx++;
+                        if(cellx == 3) break;
+                    }
+                }
+                if(x <3 && cellx<3) {
+                    _selectionY = x;
+                    _selectionCellY = cellx;
+                    if ([self._selectionChangeDelegate respondsToSelector:@selector(setAvailableNumbers:)])
+                    {
+                        NSMutableArray *nsarr = [[NSMutableArray alloc]init];
+                        [self._model getAvailableValuesAtCell:_selectionCellX andCellY:_selectionCellY xIndex:_selectionX yIndex:_selectionY ret:nsarr];
+                        
+                        [self._selectionChangeDelegate setAvailableNumbers:nsarr];
+                    }
+                }
+                
+            }
             handled = YES;
         }
     }
@@ -343,7 +471,12 @@
 }
 
 - (IBAction)eraseButtonClick:(FlatButton *)sender {
-    NSLog(@"erase!!!!!!");
+    if(_isInNoteMode) {
+        [self._model setCurrentNote:0 atCellX:_selectionCellX andCellY:_selectionCellY xIndex:_selectionX yIndex:_selectionY];
+    } else {
+        [self._model setCurrentValue:0 atCellX:_selectionCellX andCellY:_selectionCellY xIndex:_selectionX yIndex:_selectionY];
+    }
+    [self setNeedsDisplay:YES];
 }
 
 - (IBAction)noteButtonClick:(NSButton *)sender {
@@ -358,22 +491,24 @@
         [self setNeedsDisplay:YES];
     }
 }
-
-- (IBAction)setClickNumber:(NineGridButton *)sender {
-    if(_haveSelection) {
-        if (_isInNoteMode) {
-            [self._model setCurrentNote:sender.clickedNumber
-                                 atCellX:_selectionCellX
-                                andCellY:_selectionCellY
-                                  xIndex:_selectionX
-                                  yIndex:_selectionY];
-        } else {
-            [self._model setCurrentValue:sender.clickedNumber
+- (void)setValue:(int) value {
+    if (_isInNoteMode) {
+        [self._model setCurrentNote:value
+                            atCellX:_selectionCellX
+                           andCellY:_selectionCellY
+                             xIndex:_selectionX
+                             yIndex:_selectionY];
+    } else {
+        [self._model setCurrentValue:value
                              atCellX:_selectionCellX
                             andCellY:_selectionCellY
                               xIndex:_selectionX
                               yIndex:_selectionY];
-        }
+    }
+}
+- (IBAction)setClickNumber:(NineGridButton *)sender {
+    if(_haveSelection) {
+        [self setValue: sender.clickedNumber];
         [self setNeedsDisplay: YES];
     }
 }
@@ -404,7 +539,16 @@
         [self._model resetWithDifficulty:SudokuBoard::UNKNOWN];
     }
     _haveSelection = FALSE;
-    
+    if ([self._selectionChangeDelegate respondsToSelector:@selector(setAvailableNumbers:)])
+    {
+        NSMutableArray *nsarr = [[NSMutableArray alloc]init];
+        for(int i =1; i<10;i++) {
+            NSNumber * n = [NSNumber numberWithInteger:i];
+            [nsarr addObject:n];
+        }
+        
+        [self._selectionChangeDelegate setAvailableNumbers:nsarr];
+    }
     
     for(NSMenuItem* item in sender.parentItem.submenu.itemArray) {
         [item setState:NSControlStateValueOff];

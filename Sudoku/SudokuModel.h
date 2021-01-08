@@ -42,6 +42,8 @@ struct step {
 -(BOOL)isConflicted:(UInt32)cellX andCellY:(UInt32)cellY
                        xIndex:(UInt32)x yIndex:(UInt32)y;
 -(BOOL)checkConflicts;
+-(void)getAvailableValuesAtCell:( UInt32 )cellX andCellY:( UInt32 )cellY xIndex:( UInt32 )x yIndex:( UInt32 )y ret:(NSMutableArray*)ret;
+
 -(BOOL)isPuzzleSolved;
 
 -(void)resetWithDifficulty:(SudokuBoard::Difficulty)level;

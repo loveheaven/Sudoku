@@ -12,6 +12,7 @@
 #import "Util.h"
 #import "Sudoku-Swift.h"//Product Module Name in Build-Settings
 
+
 @interface SudokuView : NSView
 {
     @private
@@ -26,7 +27,6 @@
     BOOL _isInNoteMode;
     BOOL _isInHintMode;
     
-    SudokuModel* _model;
     
 }
 
@@ -39,6 +39,8 @@
 
 - (IBAction)setClickNumber:(NineGridButton *)sender;
 - (IBAction)menuSelected:(NSMenuItem*)sender;
+
 @property (assign, nonatomic) SudokuModel* _model;
+@property (nonatomic, strong) id <SelectionChangeDelegate> _selectionChangeDelegate;
 
 @end

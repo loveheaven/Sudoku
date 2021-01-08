@@ -29,8 +29,8 @@ static SudokuModel* gSharedModel;
         //{
         //    haveSolution = _sudokuBoard->solve();
         //}
-         _stack = new stack<step>();
-
+        _stack = new stack<step>();
+        
         _playerPuzzleInProgress = new int[81];
         _isPlayerPuzzleConflicted = new BOOL[81];
         noteInProcess = new int[81*9];
@@ -71,9 +71,15 @@ static SudokuModel* gSharedModel;
     [self checkConflicts];
 }
 -( void )setCurrentNote:( UInt32 )value atCellX:( UInt32 )cellX andCellY:( UInt32 )cellY
-                  xIndex:( UInt32 )x yIndex:( UInt32 )y
+                 xIndex:( UInt32 )x yIndex:( UInt32 )y
 {
     if(_playerPuzzleInProgress[ mCellToArrayIndex(cellX,cellY,x,y) ] != 0) {
+        return;
+    }
+    if (value == 0) {
+        for(int i =0;i<9;i++) {
+            noteInProcess[mCellToArrayIndex(cellX, cellY, x, y)*9 + i] = 0;
+        }
         return;
     }
     if (noteInProcess[mCellToArrayIndex(cellX,cellY,x,y)*9 + (value - 1)] == value) {
@@ -140,6 +146,7 @@ static SudokuModel* gSharedModel;
     }
     return isConflicted;
 }
+
 -(BOOL)checkConflicts {
     memset(_isPlayerPuzzleConflicted, FALSE, 81);
     BOOL isConflicted = FALSE;
@@ -155,8 +162,21 @@ static SudokuModel* gSharedModel;
             }
         }
     }
-
+    
     return isConflicted;
+}
+
+-(void)getAvailableValuesAtCell:( UInt32 )cellX andCellY:( UInt32 )cellY xIndex:( UInt32 )x yIndex:( UInt32 )y ret:(NSMutableArray*)ret  {
+    
+    [ret removeAllObjects];
+    for(int i = 1; i < 10; i++) {
+        BOOL isConflicted = FALSE;
+        isConflicted = [self checkValueConflictAtCell:cellX andCellY:cellY xIndex:x yIndex:y value:i setFlag:FALSE];
+        if(!isConflicted) {
+            NSNumber *number = [NSNumber numberWithInt:i];
+            [ret addObject:number];
+        }
+    }
 }
 
 -(BOOL)undoCurrentValue {
@@ -256,8 +276,6 @@ static SudokuModel* gSharedModel;
     memset(noteInProcess, 0, 81*9*sizeof(int));
     //        _sudokuBoard->printSolution();
     
-    
-
 }
 
 @end

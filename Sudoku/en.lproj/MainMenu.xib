@@ -530,6 +530,9 @@
                             <userDefinedRuntimeAttribute type="color" keyPath="backgroundHoverColor">
                                 <color key="value" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="0.2011183647260274" colorSpace="custom" customColorSpace="sRGB"/>
                             </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="fontDisableColor">
+                                <color key="value" name="gridColor" catalog="System" colorSpace="catalog"/>
+                            </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                         <connections>
                             <action selector="setClickNumber:" target="-1" id="axg-Yl-NwB"/>
